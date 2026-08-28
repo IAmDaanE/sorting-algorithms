@@ -2,6 +2,10 @@
 
 Three algorithms that sort an array of 200 values from smallest to biggest. See how long each one takes and which is the fastest.
 
+---
+
+<img width="1789" height="648" alt="Schermafbeelding 2026-08-29 001602" src="https://github.com/user-attachments/assets/555fdf22-6936-46a0-9dfb-a98a7f972117" />
+
 ## The Algorithms
 
 The algorithms are bubble sort, insertion sort and selection sort. Here is how they work:
