@@ -58,7 +58,6 @@ running2 = False
 running = True
 clock = pygame.time.Clock()
 
-pygame.time.delay(1000)
 start_time = time.time()
 
 counter = 1

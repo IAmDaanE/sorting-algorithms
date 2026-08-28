@@ -63,27 +63,35 @@ running2 = False
 running = True
 clock = pygame.time.Clock()
 
-pygame.time.delay(1000)
 start_time = time.time()
-beginning = 0
+
+current_floor = 1
+counter = 1
+currently_smallest = 1
 
 while running:
     #pygame.time.delay(20)
-
-    if beginning == 199:
-        end_time = time.time()
-        elapsed = end_time - start_time
-        running2 = True
-        break
     
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
 
-    for i in range(beginning + 1,len(values)):
-        if values[beginning] > values[i]:
-            values[beginning], values[i] = values[i], values[beginning]
-    beginning += 1
+    if values[currently_smallest] > values[counter]:
+        currently_smallest = counter
+
+    counter += 1
+
+    if counter == 200:
+        values[current_floor - 1], values[currently_smallest] = values[currently_smallest], values[current_floor - 1]
+        current_floor += 1
+        counter = current_floor - 1
+        currently_smallest = current_floor - 1
+
+    if current_floor == 199:
+        end_time = time.time()
+        elapsed = end_time - start_time
+        running2 = True
+        break
 
     screen.fill((0, 0, 0))
 
@@ -93,6 +101,12 @@ while running:
         height = value * 2
 
         pygame.draw.rect(screen, (255, 255, 255), (x, y, bar_width - 2, height))
+    
+    counter_x = counter * bar_width
+    counter_y = SCREEN_HEIGHT - values[counter] * 2
+    counter_height = value * 2
+
+    pygame.draw.rect(screen, (22, 133, 201), (counter_x, counter_y, bar_width - 2, counter_height))
     
     pygame.display.update()
 

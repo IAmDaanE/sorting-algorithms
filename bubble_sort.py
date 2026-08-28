@@ -61,7 +61,6 @@ max_counter = 199
 highlighted = 0
 examined = 0
 
-pygame.time.delay(1000)
 start_time = time.time()
 end_time = 0
 while running:
