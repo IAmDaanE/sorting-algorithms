@@ -87,7 +87,7 @@ while running:
         counter = current_floor - 1
         currently_smallest = current_floor - 1
 
-    if current_floor == 199:
+    if current_floor == 200:
         end_time = time.time()
         elapsed = end_time - start_time
         running2 = True

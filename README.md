@@ -8,14 +8,15 @@ Three algorithms that sort an array of 200 values from smallest to biggest. See 
 
 ## The Algorithms
 
-The algorithms are bubble sort, insertion sort and selection sort. Here is how they work:
+The algorithms are bubble sort, insertion sort and selection sort. Here is how they work and their average benchmarked times on my laptop:
 
 #### Bubble Sort
-Always compares two neighboring values and checks if the left one is bigger then the right one, if so their positions are swapped.
+Always compares two neighboring values and checks if the left one is bigger then the right one, if so their positions are swapped. It completed in `14.5167` seconds.
 #### Insertion Sort
-There is a sorted and unsorted pool, at first everything is unsorted. It always takes the first upcoming value in the unsorted one and keeps shifting it left until its in the right place.
+There is a sorted and unsorted pool, at first everything is unsorted. It always takes the first upcoming value in the unsorted one and keeps shifting it left until its in the right place. It completed in `8.1183` seconds.
 #### Selection Sort
-Again works with a sorted and unsorted pool. It searches for the smallest one in the unsorted pool and sticks it to the right of the sorted one.
+Again works with a sorted and unsorted pool. It searches for the smallest one in the unsorted pool and sticks it to the right of the sorted one. It completed in `15.117` seconds.
+
 
 ## Getting Started
 
