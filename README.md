@@ -17,29 +17,18 @@ There is a sorted and unsorted pool, at first everything is unsorted. It always 
 #### Selection Sort
 Again works with a sorted and unsorted pool. It searches for the smallest one in the unsorted pool and sticks it to the right of the sorted one. It completed in `15.117` seconds.
 
+## Running a Algorithm
 
-## Getting Started
+**Requires:** Python 3.9 - 3.14
+1. Install the required libraries, preferably in a venv.
 
-### Getting the Source
-
-This project is [hosted on GitHub](https://github.com/IAmDaanE/sorting-algorithms). You can download the zip or clone this project directly using this command:
-
-```
-git clone git@github.com:IAmDaanE/sorting-algorithms.git
-```
-
-### Running the Program
-
-Requirements: You must have Python 3.10 or higher.
-1. Clone the repository or download the zip and unpack it to your directory of choice.
-2. Navigate to that directory in a terminal.
-3. In a venv or the global python version install the needed libraries.
     ```
     pip install -r requirements.txt
     ```
-4. Run the program.
+2. Run the program.
+
     ```
-    python bubble_sort.py
+    python src/bubble_sort.py # replace bubble_sort.py with the desired variant
     ```
 
 ## License
