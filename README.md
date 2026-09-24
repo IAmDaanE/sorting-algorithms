@@ -19,7 +19,7 @@ There is a sorted and unsorted pool, at first everything is unsorted. It always 
 #### Selection Sort
 Again works with a sorted and unsorted pool. It searches for the smallest one in the unsorted pool and sticks it to the right of the sorted one. It completed in `15.117` seconds.
 
-## Running a Algorithm
+## Running an Algorithm
 
 **Requires:** Python 3.9 - 3.14
 1. Install the required libraries, preferably in a venv.
