@@ -1,6 +1,6 @@
 # Visualized Sorting Algorithms
 
-Three algorithms that sort an array of 200 values from smallest to biggest. See how long each one takes and which is the fastest.
+Three algorithms that sort an array of 200 values from smallest to biggest. See how long each one takes and which is the fastest. Written in python and visualized with pygame.
 
 ---
 
