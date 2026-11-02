@@ -41,7 +41,7 @@ def resource_path(file):
 
 font = pygame.font.Font(resource_path("LuckiestGuy-Regular.ttf"), 60)
 
-screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
+screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT), pygame.SCALED | pygame.RESIZABLE)
 pygame.display.set_caption("insertion-sort")
 
 random.shuffle(values)

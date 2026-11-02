@@ -37,7 +37,7 @@ bar_width = SCREEN_WIDTH // len(values)
 
 pygame.init()
 
-screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
+screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT), pygame.SCALED | pygame.RESIZABLE)
 pygame.display.set_caption("selection-sort")
 
 random.shuffle(values)

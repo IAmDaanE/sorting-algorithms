@@ -16,7 +16,7 @@ def resource_path(file):
 
 font = pygame.font.Font(resource_path("LuckiestGuy-Regular.ttf"), 60)
 
-screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
+screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT), pygame.SCALED | pygame.RESIZABLE)
 pygame.display.set_caption("bubble-sort")
 
 values = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
